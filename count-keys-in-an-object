@@ -11,6 +11,4 @@ const errorObject = {
     stackTrace: "Stack Trace"
 }
 
-
-// Check for object existence first and then access name key
 console.log(Object.keys(errorObject).length);
