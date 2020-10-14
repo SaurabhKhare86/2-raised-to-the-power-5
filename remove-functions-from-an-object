@@ -1,0 +1,16 @@
+// cerner_2^5_2020
+
+// Remove keys that hold functions in an object
+
+const errorObject = {
+    uniqueID: 100,
+    type: "Joy",
+    getMessage: () => "Error Message",
+    getId: () => 100
+};
+
+
+// A Hack to remove functions from an object
+const objectWithoutFunction = JSON.parse(JSON.stringify(errorObject));
+
+console.log(objectWithoutFunction);
